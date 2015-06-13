@@ -1,6 +1,105 @@
-\chapter{Interaktions-,Funktions- und Daten-Semantik}
+\chapter{Interaktions-, Funktions- und Daten-Semantik}
 ST: Interaktonssemantik: Partitioniertes Aktivitätsdiagramm für jeden Use
 Case mit Kontroll- und Objektfluss;
 Funktionssemantik: (verfeinerte) Aktivitätsdiagramme mit Kontroll- und
 Objektfluss für jede Systemaktion in der Interaktionssemantik;
 Datensemantik: elementare Dingschemata
+
+\section{Handlungsschema}
+Dient als Brücke zwischen dem Nutzungskontext-Modell und der Interaktions-, Funktions- und Daten-Semantik
+
+\subsubsection*{Benennung der Handlung}
+Navigieren lassen
+\subsubsection*{Kurzdefinition/Zweck}
+FH Besucher kennt den Weg zu einem Ort nicht, an den er aufgrund eines Anliegens (einer Intention) gelangen möchte
+\subsubsection*{Benutzergruppen}
+FH-Besucher
+\subsubsection*{Involvierte Dinge}
+\begin{itemize}
+\item Ort
+\item Weg
+\item Schritte
+\item Türen
+\item Treppen
+\item Aufzüge
+\item Position
+\item Nutzer
+\end{itemize}
+\subsubsection*{Auslösende Ereignis}
+Der User teilt seine Intention dem System mit 
+\subsubsection*{Vorbedingungen} 
+Nutzer verfügt über mobiles Endgerät 
+\subsubsection*{Nachbedingungen bei Misserfolg} 
+User teilt dem System seine Intention erneut mit 
+\subsubsection*{Invarianten} 
+Intention des Users ändert sich nicht (Gegensatz zum Auto Navi: Auch wenn sich die Route ändern kann ist das Ziel die Invariante. In unserem Fall kann sich auch das Ziel ändern, wenn es die Intention des Users erfüllen kann und näher liegt.) 
+\subsubsection*{Verlaufsbedingungen} 
+User folgt den Anweisungen des System 
+
+\section{Dingschemata}
+
+\begin{itemize}
+\item \emph{Benennung des Dings:} \Gls{ort}
+\item \emph{Kurzdefinition:} (siehe Glossar)
+\item \emph{Merkmale:} Position, Bedeutung, Bezeichnung
+\item \emph{Zustandsraum:} geöffnet/nicht geöffnet
+\end{itemize}
+
+\hrulefill
+
+\begin{itemize}
+\item \emph{Benennung des Dings:} Weg
+\item \emph{Kurzdefinition:} (siehe Glossar)
+\item \emph{Merkmale:} Startort, Zielort, Schritte
+\item \emph{Beziehung zu anderen Dingen:} Verbindet zwei Orte
+\item \emph{Zustandsraum:} gesperrt/nicht gesperrt
+\end{itemize}
+
+\hrulefill
+
+\begin{itemize}
+\item \emph{Benennung des Dings:} Schritt
+\item \emph{Kurzdefinition:} (siehe Glossar)
+\item \emph{Merkmale:} Startposition, Endposition, Länge, Begehbarkeit
+\item \emph{Beziehung zu anderen Dingen:} Ein Schritt ist Teil eines Weges
+\end{itemize}
+
+\hrulefill
+
+\begin{itemize}
+\item \emph{Benennung des Dings:} Tür
+\item \emph{Kurzdefinition:} (siehe Glossar)
+\item \emph{Merkmale:} Begehbarkeit
+\item \emph{Beziehung zu anderen Dingen:} Teil eines Schrittes
+\item \emph{Zustandsraum:} geöffnet/verschlossen
+\end{itemize}
+
+\hrulefill
+
+\begin{itemize}
+\item \emph{Benennung des Dings:} Treppen, Aufzüge
+\item \emph{Kurzdefinition:} (siehe Glossar)
+\item \emph{Merkmale:} Etagen, Begehbarkeit, Länge
+\item \emph{Beziehung zu anderen Dingen:} Besondere Schritte eines Weges
+\item \emph{Zustandsraum:} In/Außer Betrieb
+\end{itemize}
+
+\hrulefill
+
+\begin{itemize}
+\item \emph{Benennung des Dings:} Position
+\item \emph{Kurzdefinition:} (siehe Glossar)
+\item \emph{Merkmale:} Koordinaten (X, Y, Z)
+\item \emph{Beziehung zu anderen Dingen:} Ort, Weg, Schritt
+\end{itemize}
+
+
+\hrulefill
+
+\begin{itemize}
+\item \emph{Benennung des Dings:} FH Besucher
+\item \emph{Kurzdefinition:} (siehe Glossar)
+\item \emph{Merkmale:} Alter, Fitness, Sprache
+\item \emph{Beziehung zu anderen Dingen:} Position, Ort
+\item \emph{Zustandsraum:} still/in Bewegung
+\end{itemize}
