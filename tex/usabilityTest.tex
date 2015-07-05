@@ -1,2 +1,94 @@
 \chapter{Usability Test Vorbereitung}
-MCI: Lauffähiger Prototyp, Usability-Testplan
+
+\subsubsection*{Was ist das Ziel?}
+Unser Ziel ist es, den Nutzer zu seinem Ziel zu führen, das er entweder über die direkte Eingabe der Raumnummer oder über eine Eingabe der Intention wählt.
+Dabei achten wir vor allem darauf, dass die Bedienung effektiv, effizient und zufriedenstellend abläuft.
+\subsubsection*{Testplan}
+\begin{itemize}
+\item \textbf{Teilnehmer:} Mara Braun, Fabian Hardt, Thomas Kopp
+\item \textbf{Methoden:} Video, Log-Files, Lautes Denken, Eye-Tracking, Fragebogen
+\item \textbf{Aufgaben:} Siehe unten
+\item \textbf{Testumgebung:} Mobiles Endgerät des Nutzers (Smartphone oder Tablet), Anwendung wird auf Server deployt
+\item \textbf{Rolle und Aufgaben des Test-Moderators:} Der Moderator weist die Testperson in die Aufgabe ein und steht bei Fragen zur Verfügung. Vor Beginn des Tests sollten die Kameras eingestellt und dem Tester das Eye-Tracking sowie das Vorgehen des Tests erläutert werden.
+\item \textbf{Testdaten und Bewertungsmaße:} Schwerwiegende Probleme, die die Benutzung verhindern. Mittelschwere Probleme, die die Benutzung erschweren. Leichtwiegende Probleme, die das Design und persönliche Präferenzen betreffen.
+\item \textbf{Bericht, Präsentation:} Bericht wird aus Fragebogen generiert.
+
+\end{itemize}
+\subsubsection*{Testaufgabe}
+\begin{itemize}
+\item \textbf{Einleitung:} Wir zeigen der Testperson erst die Startseite und fragen sie nach ihren Erwartungen und Eindrücken.
+\begin{enumerate}
+\item Du verlässt die Vorlesung und musst dringend auf Toilette. Wie würdest du navigieren?
+\item Du hast in 5 Minuten Vorlesung, aber vergessen wo Raum 2230 ist. Wie würdest du vorgehen, um den Raum zu finden?
+\item Du hast dir letzte Woche ein Bein gebrochen und bist nun auf Krücken unterwegs. Du möchtest von den Tischtennisplatten herüber zur Mensa, um Mittag zu essen. Da es aber draußen Hunde und Katzen regnet, möchtest du den Außenbereich so lange wie möglich meiden. Wie wirst du die App benutzen?
+\item Du möchtest in die Sprechstunde von Prof. Klocke, kennst seine Büroraumnummer aber nicht, wie kannst du dich zu seinem Büro navigieren lassen?
+\item Kienbaum veranstaltet seine Preisverleihung im gesponsorten Vorlesungssaal, du möchtest an dir die Preisverleihung ansehen, wie findest du heraus wo der Kienbaum Saal ist?
+\end{enumerate}
+\item \textbf{Material und Systemzustand}
+\begin{itemize}
+\item Smartphone oder PC
+\item ggf. Eingabegeräte (falls PC)
+\item Eye-Tracking-Kamera
+\item Videokamera
+\item Fragebogen
+\item App zeigt Startseite
+\end{itemize}
+\item \textbf{Beschreibung der erfolgreichen Lösung}
+\begin{enumerate}
+\item Der Nutzer klickt auf der Startseite des Campus Compass sofort auf die
+  Karte ``WC'' und lässt sich navigieren.
+\item Die Testperson befindet sich auf der Startseite der Navigation und klickt
+  auf ``Information'', um sich navigieren zu lassen. Alternativ: Der Nutzer
+  benutzt den Header, um den Raum einzugeben und lässt sich von da an
+  navigieren.
+\item Der Tester beginnt indem auf die Karte ``Nahrung'' klickt, um sich zur
+  Mensa navigieren zu lassen. Auf der nächsten Ansicht wählt er in der rechten
+  oberen Ecke die Optionen und stellt ``Lift bevorzugen'', ``man. Türen'' und
+  Innenbereich an. Nun kann die Navigation beginnen. Alternativ: Der Nutzer
+  beginnt, indem er versucht sich ein Profil einzurichten, um seine Bedürfnisse
+  anzupassen.
+\end{enumerate}
+\end{itemize}
+\subsubsection*{Fragebogen zur Usability}
+Im folgenden zu sehen ist der Fragebogen, welcher den Probanden jeweils nach
+Abschluss des Tests zum ausfüllen vorgelegt wurde. Die Ergebnisse des Test
+werden im Anschluss zusammengefasst.
+
+\begin{center}
+  \begin{tabular}{ c c c }
+    \toprule
+    \textbf{Bedienung} & \textbf{Bewertung} &  \\ \midrule
+    einfach &$ \bullet\bullet\bullet\bullet\bullet$ & kompliziert \\ \midrule
+    angenehm &$ \bullet\bullet\bullet\bullet\bullet$ & unangenehm \\  \midrule
+    originell &$ \bullet\bullet\bullet\bullet\bullet$ & konventionell \\ \midrule
+    praktisch &$ \bullet\bullet\bullet\bullet\bullet$ & unpraktisch \\ \midrule
+    voraussagbar &$ \bullet\bullet\bullet\bullet\bullet$ & unberechenbar \\ \midrule
+    intuitiv &$ \bullet\bullet\bullet\bullet\bullet$ & unintuitiv \\
+    \bottomrule
+  \end{tabular}
+\end{center}
+
+\begin{center}
+  \begin{tabular}{ c c c }
+    \toprule
+    \textbf{Design} & \textbf{Bewertung} &  \\ \midrule
+    angenehm &$ \bullet\bullet\bullet\bullet\bullet$ & unangenehm \\ \midrule
+    originell &$ \bullet\bullet\bullet\bullet\bullet$ & konventionell \\  \midrule
+    schön &$ \bullet\bullet\bullet\bullet\bullet$ & hässlich \\ \midrule
+    sympathisch &$ \bullet\bullet\bullet\bullet\bullet$ & unsympathisch \\ \midrule
+    einladend &$ \bullet\bullet\bullet\bullet\bullet$ & zurückweisend \\ \midrule
+    modern &$ \bullet\bullet\bullet\bullet\bullet$ & obsolet \\
+    \bottomrule
+  \end{tabular}
+\end{center}
+\vspace{1cm}
+\noindent{
+\vspace{2cm}
+Aus welchen Gründen würdest du die App auch im Alltag nutzen oder nicht nutzen? \\
+\vspace{2cm}
+Würdest du die App Erstsemestern weiterempfehlen? \\
+\vspace{2cm}
+Was hat dir gut gefallen? \\
+\vspace{2cm}
+Was könnten wir verbessern? \\
+}
